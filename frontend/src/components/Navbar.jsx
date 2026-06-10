@@ -20,9 +20,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/10 shadow-glow">
-            <span className="font-display text-lg font-bold text-white">D</span>
-          </div>
+         
+            <img
+              src="/image.png"
+              alt="DotTech Academy Logo"
+              className="h-20 w-20 p-0"
+            />
+         
           <div>
             <p className="font-display text-lg font-semibold text-white">
               DotTech Academy
