@@ -8,6 +8,7 @@ import courseRoutes from "./routes/courseRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import { seedCourse } from "./seed/seedCourse.js";
 
+
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -24,8 +25,13 @@ app.use(
 app.use(express.json({ limit: "2mb" }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
+app.use(
+  cors({
+    origin: "*",
+  })
+);  
 
-app.get("/health", (_request, response) => {
+app.get("/health", (request, response) => {
   response.json({ status: "ok", service: "DotTech Academy API" });
 });
 
@@ -38,6 +44,8 @@ app.use((error, _request, response, _next) => {
     message: error.message || "Server error",
   });
 });
+
+
 
 async function startServer() {
   await connectDb();

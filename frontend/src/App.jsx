@@ -29,6 +29,7 @@ const PageFrame = ({ children }) => (
 
 const AppRoutes = () => {
   const location = useLocation();
+  
 
   return (
     <AnimatePresence mode="wait">
