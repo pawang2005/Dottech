@@ -117,9 +117,7 @@ export default function CourseDetails() {
                     Enroll Now
                   </a>
                   <a
-                    href={
-                      "/8-Week Generative AI No-Code Course Brochure.pdf",
-                    }
+                    href={getAssetUrl(resolvedCourse.brochurePDF) }
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10"
