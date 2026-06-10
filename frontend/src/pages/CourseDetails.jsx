@@ -118,7 +118,7 @@ export default function CourseDetails() {
                   </a>
                   <a
                     href={getAssetUrl(
-                      resolvedCourse.brochurePDF || "/brochure.pdf",
+                      resolvedCourse.brochurePDF || "/8-Week Generative AI No-Code Course Brochure.pdf",
                     )}
                     target="_blank"
                     rel="noreferrer"
