@@ -45,6 +45,7 @@ export default function Footer() {
             Contact
           </p>
           <p className="mt-4 text-sm text-slate-300">{contactDetails.phone}</p>
+          <p className="mt-4 text-sm text-slate-300">{contactDetails.email}</p>
           <p className="mt-2 max-w-sm text-sm leading-6 text-slate-400">
             {contactDetails.address}
           </p>

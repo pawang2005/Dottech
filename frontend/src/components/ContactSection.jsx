@@ -55,7 +55,7 @@ export default function ContactSection({
                 <div>
                   <p className="text-sm font-semibold text-white">Email</p>
                   <p className="text-sm text-slate-300">
-                    info@dottechacademy.com
+                    dottech0627@gmail.com
                   </p>
                 </div>
               </div>

@@ -7,6 +7,7 @@ export const contactDetails = {
   phone: "+91 9930304555",
   address:
     "1st Floor, Ambedkar Bhavan, Opposite B.D.D Chawl No.9, Worli, Mumbai - 400018",
+  email: "dottech0627@gmail.com",
 };
 
 export const whyDotTech = [
